@@ -5,6 +5,7 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
     }
 
     :root {
@@ -16,13 +17,19 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: var(--white);
+        background-color: ${({ theme }) => theme.themeColor};
         min-width: 100%;
         min-height: 100vh;
+
+        transition: background-color 0.4s;
     }
 
     ul, ol, li {
         list-style: none;
+    }
+
+    button {
+        cursor: pointer;
     }
 
     input{
