@@ -3,7 +3,7 @@ import * as S from "./style";
 import Button from "../Button";
 
 import logo from "../../assets/dev_featival.svg";
-import { LuMoon } from "react-icons/lu";
+import SwitchTheme from "../SwitchTheme";
 
 const Header = () => {
   return (
@@ -16,7 +16,7 @@ const Header = () => {
           <Button variant="outline">Quero meu ingresso!</Button>
         </S.li>
         <S.li>
-          <LuMoon />
+          <SwitchTheme />
         </S.li>
       </S.ul>
     </S.header>
