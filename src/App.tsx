@@ -1,9 +1,8 @@
 import GlobalStyle from "./style/global";
 import { useContext } from "react";
 
-import Header from "./components/Header";
 import { ThemeContext } from "./context/ThemeProvider";
-import Footer from "./components/Footer";
+import PageRoutes from "./routes";
 
 function App() {
   const { themeColor } = useContext(ThemeContext);
@@ -11,9 +10,8 @@ function App() {
   return (
     <>
       <GlobalStyle theme={{ ...themeColor }} />
-      <Header />
 
-      <Footer />
+      <PageRoutes />
     </>
   );
 }
