@@ -5,6 +5,7 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
     }
 
     :root {
@@ -23,6 +24,10 @@ export default createGlobalStyle`
 
     ul, ol, li {
         list-style: none;
+    }
+
+    button {
+        cursor: pointer;
     }
 
     input{
