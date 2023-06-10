@@ -3,6 +3,7 @@ import { useContext } from "react";
 
 import Header from "./components/Header";
 import { ThemeContext } from "./context/ThemeProvider";
+import Footer from "./components/Footer";
 
 function App() {
   const { themeColor } = useContext(ThemeContext);
@@ -11,6 +12,8 @@ function App() {
     <>
       <GlobalStyle theme={{ themeColor }} />
       <Header />
+
+      <Footer />
     </>
   );
 }
