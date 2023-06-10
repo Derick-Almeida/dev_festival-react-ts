@@ -5,14 +5,17 @@ export const ThemeContext = createContext<IThemeProps>({} as IThemeProps);
 
 const ThemeProvider = ({ children }: IProviderProps) => {
   const [darkTheme, setdarkTheme] = useState<boolean>(false);
-  const [themeColor, setThemeColor] = useState<ThemeColors>("var(--white)");
+  const [themeColor, setThemeColor] = useState<ThemeColors>({
+    bg: "var(--blue-2)",
+    text: "var(--white)",
+  });
 
   useEffect(() => {
     if (!darkTheme) {
-      setThemeColor("var(--white)");
+      setThemeColor({ bg: "var(--white)", text: "var(--black)" });
     }
     if (darkTheme) {
-      setThemeColor("var(--blue-2)");
+      setThemeColor({ bg: "var(--blue-2)", text: "var(--white)" });
     }
   }, [darkTheme]);
 

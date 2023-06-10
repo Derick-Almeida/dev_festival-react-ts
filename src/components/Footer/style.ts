@@ -12,7 +12,9 @@ export const footer = styled.footer`
 export const h3 = styled.h3`
   font-weight: 700;
   font-size: 3rem;
-  color: var(--black);
+  color: ${({ theme }) => theme.text};
+
+  transition: color 0.4s;
 `;
 
 export const container = styled.div`

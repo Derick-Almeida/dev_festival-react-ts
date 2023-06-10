@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <GlobalStyle theme={{ themeColor }} />
+      <GlobalStyle theme={{ ...themeColor }} />
       <Header />
 
       <Footer />
