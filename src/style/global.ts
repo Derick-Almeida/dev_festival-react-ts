@@ -17,7 +17,7 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: ${({ theme }) => theme.themeColor};
+        background-color: ${({ theme }) => theme.bg};
         min-width: 100%;
         min-height: 100vh;
 
@@ -30,6 +30,7 @@ export default createGlobalStyle`
 
     button {
         cursor: pointer;
+        outline: none;
     }
 
     input{
@@ -38,5 +39,6 @@ export default createGlobalStyle`
 
     a {
         text-decoration: none;
+        color: inherit;
     }
 `;
