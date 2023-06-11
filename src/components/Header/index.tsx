@@ -2,7 +2,7 @@ import * as S from "./style";
 
 import Button from "../Button";
 
-import logo from "../../assets/dev_featival.svg";
+import logo from "../../assets/dev_festival.svg";
 import SwitchTheme from "../SwitchTheme";
 import { Link } from "react-router-dom";
 

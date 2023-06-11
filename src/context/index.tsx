@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 const Providers = ({ children }: IProviderProps) => {
   return (
     <BrowserRouter>
-      <ThemeProvider>{children}</ThemeProvider>;
+      <ThemeProvider>{children}</ThemeProvider>
     </BrowserRouter>
   );
 };

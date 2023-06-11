@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { fade } from "../../style/animations";
 
 export const button = styled.button`
   border: none;
@@ -11,4 +12,8 @@ export const button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  > svg {
+    animation: ${fade} 0.5s linear forwards;
+  }
 `;

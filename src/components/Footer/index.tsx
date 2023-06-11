@@ -12,7 +12,7 @@ const Footer = () => {
   const data = [artist_1, artist_2, artist_3, artist_1, artist_2, artist_3, artist_1];
 
   return (
-    <S.footer>
+    <S.footer data-anima="bottom">
       <S.h3 theme={{ ...themeColor }}>Artistas</S.h3>
 
       <S.container>

@@ -6,7 +6,6 @@ export const footer = styled.footer`
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  padding: 5vh 15%;
 `;
 
 export const h3 = styled.h3`
@@ -22,7 +21,7 @@ export const container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
 `;
 
 export const img = styled.img`
